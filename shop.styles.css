@@ -63,6 +63,7 @@ html {
   width: auto;
   overflow: hidden;
   user-select: none;
+  cursor: pointer;
 }
 .titleWrapper:hover > .logoWrapper {
   color: transparent;
@@ -125,6 +126,7 @@ html {
   color: whitesmoke;
   border: 2px solid rgb(228, 13, 84);
   border-radius: 0.25rem;
+  cursor: pointer;
   transition: background-color 200ms ease-in-out;
 }
 .navButton:hover {
