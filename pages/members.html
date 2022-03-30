@@ -97,6 +97,58 @@
                   required
                 />
               </div>
+              <div class="formItemWrapper">
+                <label
+                  for="question"
+                  class="formLabel"
+                  style="margin-bottom: 0.2rem"
+                  >Where Did You Hear About Us?</label
+                >
+                <textarea
+                  title="question"
+                  placeholder="Billboard, TV..."
+                  class="formTextArea"
+                  maxlength="48"
+                ></textarea>
+              </div>
+              <div class="formItemWrapper">
+                <label
+                  for="plan"
+                  class="formLabel"
+                  style="margin-bottom: 0.2rem"
+                  >Billing Plan
+                </label>
+                <div class="innerWrapper">
+                  <input
+                    type="radio"
+                    id="monthly"
+                    name="billing plan"
+                    value="MONTHLY"
+                    class="radioButton"
+                  />
+                  <label for="monthly" class="radioLabel">Monthly</label>
+                </div>
+                <div class="innerWrapper">
+                  <input
+                    type="radio"
+                    id="yearly"
+                    name="billing plan"
+                    value="MONTHLY"
+                    class="radioButton"
+                  />
+                  <label for="yearly" class="radioLabel">Yearly</label>
+                </div>
+              </div>
+              <div class="formItemWrapper" style="margin: 0rem 0">
+                <div class="innerWrapper">
+                  <input type="checkbox" id="tos" name="tos" />
+                  <label for="tos" class="radioLabel">I accept the TOS</label>
+                </div>
+              </div>
+              <div class="formButtonsWrapper">
+                <button type="button" class="submitButton">Submit</button>
+                <button type="button" class="resetButton">Reset</button>
+              </div>
             </form>
           </div>
         </div>

@@ -148,7 +148,7 @@ html {
 .formContainer {
   display: flex;
   flex-direction: column;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
   padding-right: 1rem;
   width: 100%;
   height: 100%;
@@ -168,7 +168,7 @@ html {
 .formItemWrapper {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   max-width: 30rem;
   width: 90%;
   height: fit-content;
@@ -193,6 +193,67 @@ html {
 .formInput:focus {
   border: 1px solid rgb(228, 13, 84);
   outline: none;
+}
+.formTextArea {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+  height: 7rem;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(245, 245, 245, 0.71);
+  color: whitesmoke;
+  font-size: 1rem;
+  transition: border 300ms ease;
+}
+.formTextArea:focus {
+  border: 1px solid rgb(228, 13, 84);
+  outline: none;
+}
+.radioWrapper {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  margin: 0.2rem 0;
+}
+.radioButton {
+  background-color: #eee;
+  border-radius: 15%;
+}
+.radioLabel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-left: 0.35rem;
+}
+.formButtonsWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.submitButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6rem;
+  height: 2.6rem;
+  color: whitesmoke;
+  background-color: #ca0b4b;
+  border: none;
+  cursor: pointer;
+}
+.resetButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6rem;
+  height: 2.6rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1036px) {
