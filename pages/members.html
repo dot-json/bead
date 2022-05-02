@@ -61,7 +61,7 @@
               class="infoBurgers"
             />
           </div>
-          <div
+          <aside
             class="dividedContainer"
             style="justify-content: center; align-items: center"
           >
@@ -74,6 +74,7 @@
                   >Name</label
                 >
                 <input
+                  id="name"
                   title="name"
                   placeholder="Nickname"
                   class="formInput"
@@ -89,6 +90,7 @@
                   >E-Mail</label
                 >
                 <input
+                  id="email"
                   title="email"
                   placeholder="example@domain.com"
                   type="email"
@@ -105,6 +107,7 @@
                   >Where Did You Hear About Us?</label
                 >
                 <textarea
+                  id="question"
                   title="question"
                   placeholder="Billboard, TV..."
                   class="formTextArea"
@@ -113,13 +116,14 @@
               </div>
               <div class="formItemWrapper">
                 <label
-                  for="plan"
+                  for="radio"
                   class="formLabel"
                   style="margin-bottom: 0.2rem"
                   >Billing Plan
                 </label>
                 <div class="innerWrapper">
                   <input
+                    itemid="radio"
                     type="radio"
                     id="monthly"
                     name="billing plan"
@@ -130,6 +134,7 @@
                 </div>
                 <div class="innerWrapper">
                   <input
+                    itemid="radio"
                     type="radio"
                     id="yearly"
                     name="billing plan"
@@ -150,7 +155,7 @@
                 <button type="button" class="resetButton">Reset</button>
               </div>
             </form>
-          </div>
+          </aside>
         </div>
       </main>
     </div>

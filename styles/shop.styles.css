@@ -209,12 +209,22 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
+  line-height: 1em;
   color: rgb(224, 224, 224);
   margin: 0rem 0;
   text-align: center;
 }
+.cardButtonsWrapper {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: 85%;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 2px solid rgb(35, 39, 44);
+}
 .orderButton {
-  padding: 0.6rem 3rem;
+  padding: 0.6rem 2.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
@@ -230,6 +240,26 @@ html {
 }
 .orderButton:focus {
   outline: none;
+}
+.infoButton {
+  padding: 0.6rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(224, 224, 224);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: background-color 200ms ease;
+}
+.infoButton:hover {
+  cursor: pointer;
+  color: rgb(0, 102, 255);
+}
+a:visited {
+  color: purple;
+}
+a:active {
+  color: purple;
 }
 .footerWrapper {
   width: 100%;
