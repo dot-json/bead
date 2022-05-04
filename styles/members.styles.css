@@ -13,6 +13,12 @@ html {
 ::placeholder {
   color: rgba(245, 245, 245, 0.71);
 }
+table,
+th,
+td {
+  border: 1px solid rgb(175, 175, 175);
+  border-collapse: collapse;
+}
 .pageWrapper {
   height: 100vh;
   background-color: #0c0f14;
@@ -110,9 +116,10 @@ html {
 .mainContainer {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 4rem);
   padding: 3rem 2rem;
   flex-direction: row;
+  background-color: #0c0f14;
 }
 .dividedContainer {
   display: flex;
@@ -148,6 +155,7 @@ html {
 .formContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 2rem 4rem;
   padding-right: 1rem;
   width: 100%;
@@ -169,14 +177,14 @@ html {
 .formItemWrapper {
   display: flex;
   flex-direction: column;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
   max-width: 30rem;
   width: 90%;
   height: fit-content;
 }
 .formLabel {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: whitesmoke;
 }
@@ -267,11 +275,55 @@ html {
   color: black;
   background-color: whitesmoke;
 }
+.table {
+  width: 60%;
+  height: 22rem;
+  border: 1px solid rgba(245, 245, 245, 0.76);
+  margin-bottom: 2rem;
+}
+.tableCaption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+  height: 2rem;
+}
+.tableHeader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: whitesmoke;
+  height: 25%;
+  width: 33%;
+}
+.tableRow {
+  height: 25%;
+  border: 1px solid whitesmoke;
+}
+.tableLabel {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-align: center;
+}
+.tableTick {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: whitesmoke;
+  text-align: center;
+}
 
 @media screen and (max-width: 1036px) {
+  .pageWrapper {
+    height: fit-content;
+  }
   .mainContainer {
     flex-direction: column;
     padding: 3rem 2rem;
+    height: fit-content;
   }
   .dividedContainer {
     width: 100%;
@@ -286,7 +338,12 @@ html {
   }
   .formContainer {
     width: 100%;
-    background-color: transparent;
+    background: transparent;
+    align-items: center;
+    padding: 2rem 0rem;
+  }
+  .formButtonsWrapper {
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 760px) {
