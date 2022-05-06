@@ -27,6 +27,7 @@ td {
   left: 50%;
   position: absolute;
   transform: translateY(-100%);
+  color: white;
 }
 .skipper:focus {
   transform: translateY(0);
